@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kats.sqlite_application.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:text="NAME :   "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed1"
+        android:textSize="15dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/txt1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt2"
+        android:text="SURNAME :   "
+        android:layout_below="@id/ed1"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed2"
+        android:textSize="15dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/ed1"
+        android:layout_toRightOf="@+id/txt2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt3"
+        android:text="MARKS :   "
+        android:layout_below="@id/txt2"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed3"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ed2"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/txt3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt4"
+        android:text="ID :   "
+        android:layout_below="@id/txt3"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed4"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ed3"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/txt4"
+        />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ed1"
+        android:layout_centerVertical="true"
+        android:text="ADD DATA" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt1"
+        android:layout_alignBottom="@+id/bt1"
+        android:layout_toEndOf="@+id/ed2"
+        android:text="VIEW DATA" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt4"
+        android:layout_alignBottom="@+id/bt4"
+        android:layout_alignEnd="@+id/bt1"
+        android:text="UPDATE DATA" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bt2"
+        android:layout_below="@+id/bt2"
+        android:layout_marginTop="23dp"
+        android:text="DELETE DATA" />
+
+
+</RelativeLayout>
